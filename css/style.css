@@ -85,7 +85,7 @@ p{
     display:block;
     margin:0;
 }
-.slidshow{
+/* .slidshow{
     display:flex;
     margin:0;
     width:100%;
@@ -93,7 +93,7 @@ p{
     background:blue;
     border-radius:0;
     align-items:center;
-}
+} */
 #display-screen{
     margin:0 auto;
     bottom:0;
