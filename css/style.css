@@ -2,7 +2,7 @@
     box-sizing:border-box;
 }
 body{
-    background:white;
+    background-color: #d6d1c4;
     color:black;
     height:100vh;
     display:flex;
@@ -69,9 +69,11 @@ header input{
     color:lightgray;
     font-size:20px;
     padding:5px;
+    margin-top: 5%;
     margin:0px;
     text-decoration:none;
     transition: 1s;
+    height: 6%;
 }
 .sidebar a:hover{
     background:greenyellow;
@@ -183,8 +185,8 @@ hr{
     margin:0 auto;
     height:280px;
     text-align:center;
-    background:black;
-    color:white;
+    background:#d6d1c4;
+    color:rgb(255, 255, 255);
     border-radius:0;
     width: 60%;
 }
@@ -199,7 +201,7 @@ hr{
     gap:20px;
 }
 .item{
-    background:white;
+    background:#e7e3dc;/*background color of the game*/
     height:255px;
     padding:1px;
     margin:5px;
@@ -210,13 +212,11 @@ hr{
     width:100%;
     height:70%;
     border-radius:15px ;
-    box-shadow:red;
-    
 }
 .item1{
     display:block;
     width:95%;
-    background:green;
+    background:rgb(165, 165, 165);
     margin-top:8px;
     margin-left:5px;
     align-items:center;
@@ -228,7 +228,7 @@ hr{
 }
 .button{
     display:flex;
-    background:white;
+    background:rgb(222, 221, 221);/*color for buy and add to cart*/
     margin-left:10px;
     border-radius:15px;
     width:90%;
@@ -237,7 +237,7 @@ hr{
 }
 .button1{
     display:block;
-    background:orange;
+    background:rgb(165, 165, 165);
     margin-top:10px;
     margin-left:20px;
     text-align:center;
@@ -247,14 +247,14 @@ hr{
 }
 .buy{
     border-radius:15px;
-    background:blue;
+    background:rgb(165, 165, 165);
     width:50px;
     font-size:15px;
     margin-top:10px;
 }
 .add-cart{
     border-radius:15px;
-    background:red;
+    background:rgb(165, 165, 165);
     font-size:15px;
     width:85px;
     margin-top:10px;
