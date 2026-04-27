@@ -1,107 +1,7 @@
-*{
-    box-sizing:border-box;
-}
-body{
-    background-color: #d6d1c4;
-    color:black;
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    margin:0;
-    position:relative;
-    transition:0.4s;
-}
-body.dark{
-    background:#121212;
-    color:white;
-}
-header{
-    width:100%;
-    background:#292929;
-    text-align:center;
-    height:10%;
-}
-header input{
-    border-radius:15px;
-    font-size:20px;
-    width:30%;
-    padding:10px;
-    margin:20px;
-    position:relative;
-    gap:0;
-}
-#search-btn{
-    position:absolute;
-    border-radius:15px;
-    font-size:21px;
-    padding:5px;
-    top:3.1%;
-    right:35.3%;
-    gap:0;
-    background:white;
-    cursor:pointer;
-}
-#menuBtn{
-    font-size:20px;
-    position:fixed;
-    z-index:1000;
-    top:15px;
-    left:15px;
-    background:#333;
-    color:white;
-    border:none;
-    padding:5px;
-    cursor:pointer;
-    opacity:0.9;
-}
-.sidebar{
-    position:fixed;
-    top:0;
-    left:-307px;
-    width:307px;
-    height:100%;
-    background:#292929;
-    padding-top:60px;
-    transition:0.3s;
-}
-.sidebar a{
-    display:block;
-    color:lightgray;
-    font-size:20px;
-    padding:5px;
-    margin-top: 5%;
-    margin:0px;
-    text-decoration:none;
-    transition: 1s;
-    height: 6%;
-}
-.sidebar a:hover{
-    background:greenyellow;
-    color: black;
-    width: 100%;
-}
-.sidebar.active{
-    left:0;
-}
-p{
-    display:block;
-    margin:0;
-}
-/* .slidshow{
-    display:flex;
-    margin:0;
-    width:100%;
-    height:98%;
-    background:blue;
-    border-radius:0;
-    align-items:center;
-} */
 #display-screen{
     margin:0 auto;
-    bottom:0;
-    width:60%; 
-    height:50%;
-    border-radius:5px;
+    width:60%;
+    height:60%;
     background-image:url(img/1.png);
     background-size:cover;
     background-position:center;
@@ -165,108 +65,111 @@ p{
         background-image:url(img/1.png);
     }
 }
-.progress{
-    position:absolute;
-    bottom:0;
-    left:0;
-    height:5px;
-    width:0%;
-    background:lime;
+
+/* السكشن */
+.section {
+  margin:40px auto;
+  width:60%;
+  display:block;
+  overflow:hidden;
+  background-color:rgb(214, 222, 222);
 }
-hr{
-    border:none;
-    margin:0 auto 0;
-    width:60%;
-    height:5px;
-    background-color:aqua;
+body.dark .section{
+    background-color:#1e293b;
 }
-.container{
-    overflow-y:auto;
-    margin:0 auto;
-    height:280px;
-    text-align:center;
-    background:#d6d1c4;
-    color:rgb(255, 255, 255);
-    border-radius:0;
-    width: 60%;
+
+/* wrapper */
+.wrapper {
+  position: relative;
 }
-.container.dark{
-    background:red;
-    color:black;
+
+/* سكرول ستيم */
+.games-container {
+  display:flex;
+  gap:19px;
+  overflow:hidden;
+  scroll-behavior:smooth;
+  padding: 0 45px;
 }
-.container1{
-    display:grid;
-    margin:5px;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
+.games-container::-webkit-scrollbar {
+  height: 6px;
 }
-.item{
-    background:#e7e3dc;/*background color of the game*/
-    height:255px;
-    padding:1px;
-    margin:5px;
-    border-radius:15px;
+
+.games-container::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
 }
-.item img{
-    display:block;
-    width:100%;
-    height:70%;
-    border-radius:15px ;
+
+/* كارت ستيم */
+#game {
+  min-width:33%;
+  height:25%;
+  background: #1e293b;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
 }
-.item1{
-    display:block;
-    width:95%;
-    background:rgb(165, 165, 165);
-    margin-top:8px;
-    margin-left:5px;
-    align-items:center;
-    border-radius:15px;   
+
+/* Hover زي Steam */
+.game-card:hover {
+  transform: scale(1.05);
+  z-index: 2;
 }
-.item1 h4{
-    margin:0;
-    font-size:15px;
+
+/* الصورة */
+.game-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.button{
-    display:flex;
-    background:rgb(222, 221, 221);/*color for buy and add to cart*/
-    margin-left:10px;
-    border-radius:15px;
-    width:90%;
-    gap:50px;
-    cursor:pointer;
+
+/* الاسم */
+.game-card p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 6px;
+  font-size: 12px;
+  background-color:rgba(0,0,0,0.6);
+  text-align: center;
+  color:aliceblue;
+  cursor:pointer;
 }
-.button1{
-    display:block;
-    background:rgb(165, 165, 165);
-    margin-top:10px;
-    margin-left:20px;
-    text-align:center;
-    border-radius:15px;
-    width:78%;
-    cursor:pointer;
+/* الأسهم ستيم */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size:10px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.3s;
 }
-.buy{
-    border-radius:15px;
-    background:rgb(165, 165, 165);
-    width:50px;
-    font-size:15px;
-    margin-top:10px;
+
+/* تظهر عند hover */
+.wrapper:hover .arrow {
+  opacity: 1;
 }
-.add-cart{
-    border-radius:15px;
-    background:rgb(165, 165, 165);
-    font-size:15px;
-    width:85px;
-    margin-top:10px;
-}
+
+.arrow.left { left: 5px; }
+.arrow.right { right: 5px; }
 .theme-checkbox {
   --toggle-size:10px;
   appearance:none;
   width:45px;
   height:22px;
-  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+  background: linear-gradient(to right, #2a2a2a 50%, #efefef 50%) no-repeat;
   background-size: 205%;
-  background-position: 0;
+  background-position:100%;
   transition: 0.4s;
   border-radius:15px;
   cursor: pointer;
@@ -278,20 +181,19 @@ hr{
   position: absolute;
   top: 50%;
   left:2px;
-
   width:18px;
   height:18px;
-  background: white;
+  background-color:black;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: 0.4s;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .theme-checkbox:checked {
-  background-position: 100%;
+  background-position:0%;
 }
 .theme-checkbox:checked::before {
-  left: calc(100% - 20px);
+  left:calc(100% - 20px);
 }
 @media(max-width:370px){
 body{
@@ -300,7 +202,7 @@ body{
 }
 header{
     width:100%;
-    background:#444;
+    background-color:#121212;
     text-align:center;
     height:7%;
 }
@@ -319,9 +221,9 @@ header input{
     font-size:10px;
     padding:5px;
     top:11px;
-    right:75px;
+    right:80px;
     gap:0;
-    background:white;
+    background-color:aqua;
     cursor:pointer;
 }
 #menuBtn{
@@ -330,7 +232,7 @@ header input{
     z-index:2000;
     top:8px;
     left:5px;
-    background:#333;
+    background-color:aqua;
     color:white;
     border:none;
     padding:5px;
@@ -344,7 +246,7 @@ header input{
     width:100%;
     height:100%;
     z-index:1000;
-    background:red;
+    background-color:#121212;
     padding-top:60px;
     transition:0.3s;
 }
@@ -355,6 +257,12 @@ header input{
     padding:5px;
     margin:5px;
     text-decoration:none;
+}
+.sidebar a:hover{
+    background-color:greenyellow;
+    border-radius:15px;
+    width:100%;
+    color:black;
 }
 #display-screen{
     margin:0 auto;
@@ -434,7 +342,7 @@ hr{
 .container{
     overflow-y:auto;
     margin:0 auto;
-    height:46%;
+    height:44%;
     text-align:center;
     background:black;
     color:white;
@@ -519,7 +427,7 @@ body{
 }
 header{
     width:100%;
-    background:#444;
+    background-color:#121212;
     text-align:center;
     height:7%;
 }
@@ -540,7 +448,7 @@ header input{
     top:11px;
     right:100px;
     gap:0;
-    background:white;
+    background:aqua;
     cursor:pointer;
 }
 #menuBtn{
@@ -549,8 +457,8 @@ header input{
     z-index:2000;
     top:8px;
     left:5px;
-    background:#333;
-    color:white;
+    background-color:aqua;
+    color:black;
     border:none;
     padding:5px;
     cursor:pointer;
@@ -563,17 +471,23 @@ header input{
     width:100%;
     height:100%;
     z-index:1000;
-    background:red;
+    background-color:#121212;
     padding-top:60px;
     transition:0.3s;
 }
 .sidebar a{
     display:block;
-    color:black;
+    color:lightgray;
     font-size:20px;
     padding:5px;
     margin:5px;
     text-decoration:none;
+}
+.sidebar a:hover{
+    background-color:greenyellow;
+    border-radius:15px;
+    width:100%;
+    color:black;
 }
 #display-screen{
     margin:0 auto;
@@ -738,7 +652,7 @@ body{
 }
 header{
     width:100%;
-    background:#444;
+    background-color:#121212;
     text-align:center;
     height:8%;
 }
@@ -759,7 +673,7 @@ header input{
     top:11px;
     right:115px;
     gap:0;
-    background:white;
+    background-color:aqua;
     cursor:pointer;
 }
 #menuBtn{
@@ -768,8 +682,8 @@ header input{
     z-index:2000;
     top:8px;
     left:5px;
-    background:#333;
-    color:white;
+    background-color:aqua;
+    color:black;
     border:none;
     padding:5px;
     cursor:pointer;
@@ -782,17 +696,23 @@ header input{
     width:100%;
     height:100%;
     z-index:1000;
-    background:red;
+    background-color:#121212;
     padding-top:60px;
     transition:0.3s;
 }
 .sidebar a{
     display:block;
-    color:black;
+    color:lightgray;
     font-size:20px;
     padding:5px;
     margin:5px;
     text-decoration:none;
+}
+.sidebar a:hover{
+    background-color:greenyellow;
+    border-radius:15px;
+    width:100%;
+    color:black;
 }
 #display-screen{
     margin:0 auto;
@@ -957,7 +877,7 @@ body{
 }
 header{
     width:100%;
-    background:#444;
+    background-color:#121212;
     text-align:center;
     height:7%;
 }
@@ -978,7 +898,7 @@ header input{
     top:11px;
     right:255px;
     gap:0;
-    background:white;
+    background-color:aqua;
     cursor:pointer;
 }
 #menuBtn{
@@ -987,8 +907,8 @@ header input{
     z-index:2000;
     top:8px;
     left:5px;
-    background:#333;
-    color:white;
+    background-color:aqua;
+    color:black;
     border:none;
     padding:5px;
     cursor:pointer;
@@ -1001,7 +921,7 @@ header input{
     width:30%;
     height:100%;
     z-index:1000;
-    background:red;
+    background-color:#121212;
     padding-top:60px;
     transition:0.3s;
 }
@@ -1012,6 +932,12 @@ header input{
     padding:5px;
     margin:5px;
     text-decoration:none;
+}
+.sidebar a:hover{
+    background-color:greenyellow;
+    border-radius:15px;
+    width:100%;
+    color:black;
 }
 #display-screen{
     margin:0 auto;
@@ -1176,7 +1102,7 @@ body{
 }
 header{
     width:100%;
-    background:#444;
+    background-color:#121212;
     text-align:center;
     height:7%;
 }
@@ -1197,7 +1123,7 @@ header input{
     top:11px;
     right:260px;
     gap:0;
-    background:white;
+    background-color:aqua;
     cursor:pointer;
 }
 #menuBtn{
@@ -1206,8 +1132,8 @@ header input{
     z-index:2000;
     top:8px;
     left:5px;
-    background:#333;
-    color:white;
+    background-color:aqua;
+    color:black;
     border:none;
     padding:5px;
     cursor:pointer;
@@ -1220,17 +1146,23 @@ header input{
     width:20%;
     height:100%;
     z-index:1000;
-    background:red;
+    background-color:#121212;
     padding-top:60px;
     transition:0.3s;
 }
 .sidebar a{
     display:block;
-    color:black;
+    color:lightgray;
     font-size:20px;
     padding:5px;
     margin:5px;
     text-decoration:none;
+}
+.sidebar a:hover{
+    background-color:greenyellow;
+    border-radius:15px;
+    width:100%;
+    color:black;
 }
 #display-screen{
     margin:0 auto;

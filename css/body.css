@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:rgb(196, 210, 210);
+    color:black;
+    width:100%;
+    height:100vh;
+    display:block;
+    overflow-y:auto;
+    overflow-x:hidden;
+    margin:0;
+    position:relative;
+    transition:0.4s;
+}
+body.dark{
+    background:#0f172a;
+    color:white;
+}
+body.shift{
+    margin-left:307px;
+    transition: 0.3s;
+}
+header{
+    width:100%;
+    background-color:rgb(174, 185, 185);
+    position:fixed;
+    top:0;
+    text-align:center;
+    height:8%;
+    z-index:1000;
+}
+body.dark header{
+    background-color:#0b111f;
+}
+header input{
+    border-radius:15px;
+    font-size:20px;
+    width:30%;
+    padding:5px;
+    margin:15px;
+    position:relative;
+}
+#search-btn{
+    position:absolute;
+    border-radius:15px;
+    font-size:15px;
+    padding:5px;
+    margin-top:16px;
+    right:35.2%;
+    gap:0;
+    background-color:rgba(0, 255, 255, 0);
+    cursor:pointer;
+}
+body.dark #search-btn
+{
+    background-color:#0f172a;
+}
+#menuBtn{
+    font-size:18px;
+    position:fixed;
+    z-index:1000;
+    top:10px;
+    left:10px;
+    background-color:rgb(174, 185, 185);
+    color:black;
+    border:none;
+    padding:8px;
+    cursor:pointer;
+    opacity:0.9;
+}
+body.dark #menuBtn{
+    background-color:#0b111f00;
+    color:whitesmoke;
+    
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    left:-307px;
+    width:307px;
+    height:100%;
+    background-color:rgb(174, 185, 185);
+    padding-top:60px;
+    transition:0.3s;
+}
+.sidebar a{
+    display:block;
+    grid-template-columns:1fr;
+    color:black;
+    font-size:20px;
+    padding:10px;
+    margin-top:5%;
+    text-decoration:none;
+    transition:0.5s;
+}
+.sidebar a:hover{
+    background-color:#0f172a;
+    border-radius:15px;
+    width:100%;
+    color:whitesmoke;
+}
+.sidebar.active{
+    left:0;
+}
+body.dark .sidebar{
+    background-color:#0b111f;
+}
+body.dark .sidebar a{
+    color:whitesmoke;
+}
+body.dark .sidebar a:hover{
+    background-color:greenyellow;
+    color:black
+}
