@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title></title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/body.css">
     </head>
     <body>
         <header><input type="text" placeholder="if you want to search write here...">
@@ -13,34 +14,69 @@
         <button id="menuBtn">☰</button>
         <div class="sidebar">
             <input type="checkbox" class="theme-checkbox" id="themeToggle">
-            <a href="index.html">Home</a>
-            <br>
+            <a href="index.html">STORE</a>
             <a href="#">LIBRARY</a>
-            <br>
             <a href="#">COMMUNITY</a>
-            <br>
-            <a href="#">CONTACT</a>
+            <a href="#">CONTACT US</a>
         </div>
         <div id="display-screen"></div>
-        <hr>
-        <div class="container">
-            <div class="container1">
-                <div class="item"><img src="img/1.png"><div class="item1"><h4>CALL OF DUTY BLACK OPS7</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/2.png"><div class="item1"><h4>HOLLOW KNIGTH SILKSONG</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/3.png"><div class="item1"><h4>DRAGONBALL SPARHING!ZERO</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/4.png"><div class="item1"><h4>ON EPIEC BOUNTRY RUSH</h4></div><div class="button1">Free:add to library</div></div>
-                <div class="item"><img src="img/5.png"><div class="item1"><h4>INZUMA ELEVEN VICTORYROAD</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/6.png"><div class="item1"><h4>RED DEAD REDEMPTION 2</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/7.png"><div class="item1"><h4>GEAND THEFT AUTO V5</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/8.png"><div class="item1"><h4>ASPHALT LEGENDS</h4></div><div class="button1">Free:add to library</div></div>
-                <div class="item"><img src="img/9.png"><div class="item1"><h4>STUMBLE GUYS</h4></div><div class="button1">Free:add to library</div></div>
-                <div class="item"><img src="img/10.png"><div class="item1"><h4>THE SPOTTER DIG OR DIE</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/11.png"><div class="item1"><h4>TOTAL WAR THREE KINGDOMS</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/12.png"><div class="item1"><h4>DELTA FORCE NEW SEASON</h4></div><div class="button1">Free:add to library</div></div>
-                <div class="item"><img src="img/13.png"><div class="item1"><h4>INTO THE RADIUS 2</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/14.png"><div class="item1"><h4>CROSSFIRE:SIERRA SQUAD</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/15.png"><div class="item1"><h4>GATES OF NOW HERE</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
-                <div class="item"><img src="img/16.png"><div class="item1"><h4>Your Big,Cute Monster Farm</h4></div><div class="button"><div class="buy">Buy</div><div class="add-cart">Add to cart</div></div></div>
+        <div class="section">
+            <h2>Action Games🎮</h2>
+            <div class="wrapper">
+                <button class="arrow left" onclick="scrollLeft('action')">❮</button>
+                <div class="games-container" id="action">
+                     <a id="game" href=""><div class="game-card"><img src="img/1.png"><p>CALL OF DUTY BLACK OPS7</p></div></a>
+                     <a id="game" href=""><div class="game-card"><img src="img/6.png"><p>RED DEAD REDEMPTION 2</p></div></a>
+                     <a id="game" href=""><div class="game-card"><img src="img/10.png"><p>THE SPOTTER DIG OR DIE</p></div></a>
+                     <a id="game" href=""><div class="game-card"><img src="img/13.png"><p>INTO THE RADIUS 2</p></div></a>
+                     <a id="game" href=""><div class="game-card"><img src="img/14.png"><p>CROSSFIRE:SIERRA SQUAD</p></div></a>
+                     <a id="game" href=""><div class="game-card"><img src="img/20.png"><p>Trench Lord Eastern Front</p></div></a>
+                </div>
+                <button class="arrow right" onclick="scrollRight('action')">❯</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Horror Games🎮</h2>
+            <div class="wrapper">
+                <button class="arrow left" onclick="scrollLeft('action')">❮</button>
+                <div class="games-container" id="action">
+                    <a id="game" href=""><div class="game-card"><img src="img/11.png"><p>RESIDENT EVIL 4</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/15.png"><p>GATES OF NOW HERE</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/16.png"><p>7 DAYS TO DIE</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/17.png"><p>PROJECT ZOMBOID</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/18.png"><p>R.E.P.O</p></div></a>
+                </div>
+                <button class="arrow right" onclick="scrollRight('action')">❯</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Adventures Games🎮</h2>
+            <div class="wrapper">
+                <button class="arrow left" onclick="scrollLeft('action')">❮</button>
+                <div class="games-container" id="action">
+                    <a id="game" href=""><div class="game-card"><img src="img/2.png"><p>HOLLOW KNIGTH SILKSONG</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/7.png"><p>GEAND THEFT AUTO V5</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/21.png"><p>MARVEL RIVALS</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/22.png"><p>IT TAKES TWO</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/23.png"><p>CORSAIRE COVE</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/25.png"><p>WINDROSE</p></div></a>
+                </div>
+                <button class="arrow right" onclick="scrollRight('action')">❯</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Free Games🎮</h2>
+            <div class="wrapper">
+                <button class="arrow left" onclick="scrollLeft('action')">❮</button>
+                <div class="games-container" id="action">
+                    <a id="game" href=""><div class="game-card"><img src="img/4.png"><p>ON EPIEC BOUNTRY RUSH</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/8.png"><p>ASPHALT LEGENDS</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/9.png"><p>STUMBLE GUYS</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/12.png"><p>DELTA FORCE NEW SEASON</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/19.png"><p>WHERE WINDS MEET</p></div></a>
+                    <a id="game" href=""><div class="game-card"><img src="img/24.png"><p>GE🔻GUESSR</p></div></a>
+                </div>
+                <button class="arrow right" onclick="scrollRight('action')">❯</button>
             </div>
         </div>
         <script src="js/script.js"></script>
