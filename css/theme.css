@@ -121,7 +121,7 @@ body.dark .logo2{
 }
 body.dark .nav-left{
     margin-top:0;
-    margin-right:10%;
+    margin-right:25%;
     font-size:20px;
     display:flex;
     gap:20px;
@@ -161,13 +161,6 @@ body.dark .nav-left li a:hover{
 }
 .nav-right{
     display:none;
-}
-body.dark .nav-right{
-    display:flex;
-    margin-top:0;
-    margin-bottom:0;
-    margin-right:5px;
-    gap:5px;
 }
 .sre{
     border-radius:5px;
