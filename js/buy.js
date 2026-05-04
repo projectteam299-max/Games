@@ -63,6 +63,10 @@ const games = {
     "repo_game": {
         name: "R-E-P-O",
         image: "img/repo.jpg"
+    },
+    "silksong": {
+        name: "Silksong",
+        image: "img/silksong.jpg"
     }
 };
 // CHECK OWNED
