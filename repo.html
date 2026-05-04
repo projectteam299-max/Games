@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>REPO</title>
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body class="dark">
+        <header>
+            <nav class="navbar">
+                <div class="logo1">
+                    <img src="img/logo1.jpeg" alt="PR Logo">
+                </div>
+                <div class="logo2">
+                    <img src="img/logo2.jpeg" alt="PR Logo">
+                </div>
+                <ul class="nav-left">
+                    <li><a href="home.html">STORE</a></li>
+                    <li><a href="library.html">LIBRARY</a></li>
+                    <li><a href="frirnds.html">FRIENDS</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="profile2.html">PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="sre" type="text" placeholder="Search...">
+                    <button id="search">Search</button>
+                </div>
+                <div id="theme"><input type="checkbox" class="theme-checkbox" id="themeToggle"></div>
+            </nav>
+        </header>
+        <button id="menuBtn">☰</button>
+            <div class="main-game" > 
+                <div class="game-title"><h2>REPO</h2></div>
+
+                    <div class="top-section">
+                        <div class="game-media">
+                                <img id="current-img" src="img/18.png" data-type="video" alt="Game Image" style="display: none">
+                                <video id="main-video" poster="img/18.png" muted controls autoplay playsinline>
+                                    <source src="gimg/repo.mp4" type="video/mp4">
+                                </video>
+
+
+                                <div class="thumbnails">
+                                    <img src="img/18.png" data-type="video" data-src="gimg/repo.mp4">
+                                    <img src="gimg/repo1.jpg" data-type="image">
+                                    <img src="gimg/repo2.jpg" data-type="image">
+                                    <img src="gimg/repo3.jpg" data-type="image">
+                                    <img src="gimg/repo4.jpg" data-type="image">
+                                    <img src="gimg/repo5.jpg" data-type="image">
+                                
+                                 <button class="prev">❮</button>
+                                 <button class="next">❯</button>
+                                </div>
+                            </div>
+
+                    <div class="game-info">
+                            <div class="release-date"><p><span class="big-info">Release Date:</span> 15/05/2024</p></b></div>
+                            <div class="developer"><b><p><span class="big-info">Developer:</span> Skelital Games</p></b></div>
+                            <div class="age"><b><p><span class="big-info">Age Rating:</span> T (Teen)</p></b></div>
+                            <div class="genre"><b><p><span class="big-info">Genre:</span> Action, Indie, Simulation</p></b></div>
+                            <div class="publisher"><b><p><span class="big-info">Publisher:</span> Skelital Games</p></b></div>
+
+                                <div class="price"><b><span class="price">Price:</span> $9.99</b></div>  
+                        <div class="game-buttons">
+                            <div class="buy" id="buyBtn" data-id="repo_game">Buy</div>
+                            <div class="add-cart">Add to cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+                <div class="description"><p>REPO is a first-person tactical action game where you play as a recovery agent. Your job is to enter hazardous environments to reclaim valuable assets from high-risk locations. Plan your entry, manage your equipment, and survive the challenges of the job.</p>
+            
+                </div>
+
+            <div class="system-requirements">
+                <caption class="system-requirements"><h3>System Requirements</h3></caption>
+
+                <tr>
+                    <th><h4>Minimum</h4></th>
+                    <th><h4>Recommended</h4></th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 64-bit</li>
+                            <li><strong>Processor:</strong> Intel Core i5-4460 / AMD FX-6300</li>
+                            <li><strong>Memory:</strong> 8 GB RAM</li>
+                            <li><strong>Graphics:</strong> NVIDIA GeForce GTX 760 / AMD Radeon R7 260x</li>
+                            <li><strong>DirectX:</strong> Version 11</li>
+                            <li><strong>Storage:</strong> 15 GB available space</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10/11 64-bit</li>
+                            <li><strong>Processor:</strong> Intel Core i7-6700K / AMD Ryzen 5 1600</li>
+                            <li><strong>Memory:</strong> 16 GB RAM</li>
+                            <li><strong>Graphics:</strong> NVIDIA GeForce GTX 1060 / AMD Radeon RX 580</li>
+                            <li><strong>DirectX:</strong> Version 12</li>
+                            <li><strong>Storage:</strong> 15 GB available space</li>
+                        </ul>
+                    </td>
+                </tr>
+            </div>         
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="#"><i class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.instagram.com/pr_gaming_store?igsh=bGd5MmtsbGYwNGlv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <a href="contact.html"><b>Contact us</b></a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/GAME.js"></script>
+        <script src="js/buy.js"></script>
+    </body>
+</html>

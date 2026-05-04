@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Asphalt Legends Unite</title>
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body class="dark">
+        <header>
+            <nav class="navbar">
+                <div class="logo1"><img src="img/logo1.jpeg" alt="PR Logo"></div>
+                <div class="logo2"><img src="img/logo2.jpeg" alt="PR Logo"></div>
+                <ul class="nav-left">
+                    <li><a href="home.html">STORE</a></li>
+                    <li><a href="library.html">LIBRARY</a></li>
+                    <li><a href="frirnds.html">FRIENDS</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="profile2.html">PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="sre" type="text" placeholder="Search...">
+                    <button id="search">Search</button>
+                </div>
+                <div id="theme"><input type="checkbox" class="theme-checkbox" id="themeToggle"></div>
+            </nav>
+        </header>
+        <button id="menuBtn">☰</button>
+        <div class="main-game"> 
+            <div class="game-title"><h2>ASPHALT LEGENDS UNITE</h2></div>
+            <div class="top-section">
+                <div class="game-media">
+                    <img id="current-img" src="img/8.png" data-type="video" alt="Game Image" style="display: none">
+                    <video id="main-video" poster="img/8.png" muted controls autoplay playsinline>
+                        <source src="gimg/asphalt_trailer.mp4" type="video/mp4">
+                    </video>
+                    <div class="thumbnails">
+                        <img src="img/8.png" data-type="video" data-src="gimg/asphalt_trailer.mp4">
+                        <img src="gimg/asphalt1.jpg" data-type="image">
+                        <img src="gimg/asphalt2.jpg" data-type="image">
+                        <img src="gimg/asphalt3.jpg" data-type="image">
+                        <img src="gimg/asphalt4.jpg" data-type="image">
+                        <img src="gimg/asphalt5.jpg" data-type="image">
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <div class="release-date"><p><span class="big-info">Release Date:</span> 17/07/2024</p></div>
+                    <div class="developer"><b><p><span class="big-info">Developer:</span> Gameloft</p></b></div>
+                    <div class="age"><b><p><span class="big-info">Age Rating:</span> E (Everyone)</p></b></div>
+                    <div class="genre"><b><p><span class="big-info">Genre:</span> Racing, Arcade</p></b></div>
+                    <div class="publisher"><b><p><span class="big-info">Publisher:</span> Gameloft</p></b></div>
+                    <div class="price"><b><span class="price">Price:</span> Free to Play</b></div>  
+                    <div class="game-buttons">
+                        <div class="buy" id="buyBtn" data-id="asphalt_unite">Play Now</div>
+                        <div class="add-cart">Add to library</div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="description"><p>Unleash the power of the world’s fastest cars in Asphalt Legends Unite. Race through spectacular locations and build your legacy in this definitive arcade racing experience.</p></div>
+        <div class="system-requirements">
+            <caption class="system-requirements"><h3>System Requirements</h3></caption>
+            <tr>
+                <th><h4>Minimum</h4></th>
+                <th><h4>Recommended</h4></th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li><strong>OS:</strong> Windows 10 64-bit</li>
+                        <li><strong>Processor:</strong> Core i3-3110M / AMD Ryzen 3</li>
+                        <li><strong>Memory:</strong> 4 GB RAM</li>
+                        <li><strong>Graphics:</strong> Intel HD Graphics 4000</li>
+                        <li><strong>DirectX:</strong> Version 11</li>
+                        <li><strong>Storage:</strong> 10 GB available space</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li><strong>OS:</strong> Windows 10/11 64-bit</li>
+                        <li><strong>Processor:</strong> Core i5-4460 / AMD Ryzen 5</li>
+                        <li><strong>Memory:</strong> 8 GB RAM</li>
+                        <li><strong>Graphics:</strong> NVIDIA GeForce GTX 960</li>
+                        <li><strong>DirectX:</strong> Version 12</li>
+                        <li><strong>Storage:</strong> 10 GB available space</li>
+                    </ul>
+                </td>
+            </tr>
+        </div>         
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="#"><i class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.instagram.com/pr_gaming_store?igsh=bGd5MmtsbGYwNGlv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <a href="contact.html"><b>Contact us</b></a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/GAME.js"></script>
+        <script src="js/buy.js"></script>
+    </body>
+</html>

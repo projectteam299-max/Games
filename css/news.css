@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter" , sans-serif;
+}
+body{
+    display: block; 
+    min-height: 100%;
+    padding-top: 80px; 
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 40px; 
+    padding: 40px;
+    list-style: none; 
+    width:75%;
+    margin: 0 auto;
+}
+.card-list .carditem{
+    list-style: none;
+}
+@keyframes fadeinscale {
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.carditem{
+    opacity: 0;
+    animation: fadeinscale linear forwards;
+    animation-timeline: view();
+    animation-range: entry 35% cover 40%;
+}
+.card-list .carditem .card-link{
+    width: 100%;
+    display: block;
+    background: #c7c7c779;
+    padding: 15px;
+    border-radius: 16px;
+    text-decoration: none;
+    
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+body.dark .card-list .carditem .card-link {
+    width: 100%;
+    display: block;
+    background: #202e4f82;
+    padding: 15px;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,0.05);
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.card-list .carditem .card-link:hover{
+    transform: translateY(-10px); 
+    border-color: #0b388c;
+}
+body.dark .card-list .carditem .card-link:hover{
+    transform: translateY(-10px); 
+    border-color: #5372f0;
+}
+.card-list .card-link .card-imgs{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list .card-link .badge{
+    color: #ffffff;
+    background-color: #9c9c9d;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+}
+body.dark .card-list .card-link .badge{
+    color: #5372f0;
+    background-color: #0f1524;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
+}
+.card-list .card-link .card-title{
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.card-imgs {
+    transition: transform 0.3s ease;
+}
+
+.card-imgs:hover {
+    transform: scale(1.05);
+}

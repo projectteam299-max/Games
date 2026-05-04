@@ -1,0 +1,166 @@
+body {
+    background-color: rgb(11, 11, 28);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px ;
+    font-family: Quicksand;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.friends_container {
+    border: 3px solid #b9b9ba52;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+    width: 1000px;
+    min-height: 350px;
+    gap: 30px;
+    background-color: #b9b9ba52;
+}
+body.dark .friends_container {
+    border: 3px solid rgba(20, 34, 61, 0.563);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 20px;
+    width: 1000px;
+    min-height: 350px;
+    gap: 30px;
+    background-color: rgba(20, 34, 61, 0.563);
+}
+.main_header {
+    width: 1000px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.main_header p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+.add_button {
+    gap: 5px;
+    align-items: center;
+    margin-left: 19cm ;
+    margin-bottom: 10px;
+    color: White;
+    display: flex;
+}
+
+.add_button input[type="text"] {
+    font-family: Quicksand;
+    background-color: rgb(10 17 31);
+    outline: none;
+    border: 0;
+    color: White;
+    font-weight: bold;
+    caret-color: white;
+    padding: 18px 19px;
+    border-radius: 3px;
+    text-align: left;
+    border-bottom: 2px solid aqua;   
+    width: 250px;
+    height: 20px;
+}
+
+.add_button input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.16);
+}
+.container .add_button button {
+    width : 30%;
+    height : 35px;
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: rgba(0, 191, 194, 0.811);
+}
+.add_button button:hover {
+        font-family: 'Quicksand',sans-serif;
+    background-color: aqua;
+    transition: 0.3s;
+    box-shadow: 0 0 10px aqua;
+    cursor: pointer ;
+}
+
+body.dark .user_container {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(32, 52, 92, 0.495);
+    box-shadow: 0 0 10px rgba(10, 17, 31, 0.471);
+    border: 1px solid transparent   ;
+    border-radius: 3px;
+    margin: 20px 2px;
+    padding: 0 auto;
+    width: 28%;
+    height: 110px;
+    transition: transform 0.8s ease;
+}
+.user_container {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(161, 161, 161, 0.534);
+    box-shadow: 0 0 10px rgba(161, 161, 161, 0.534);
+    border: 1px solid transparent   ;
+    border-radius: 3px;
+    margin: 20px 2px;
+    padding: 0 auto;
+    width: 28%;
+    height: 110px;
+    transition: transform 0.8s ease;
+}
+.user_container:hover {
+    transform: translateY(-10px);
+    transition: 0.8s ;
+    box-shadow: 0 0 10px aqua;
+}
+body.dark .user_container:hover {
+    transform: translateY(-10px);
+    transition: 0.8s ;
+    box-shadow: 0 0 10px aqua;
+}
+.user_profile img {
+    margin: 10px 15px;
+    width: 80px;
+    float: left;
+    border-radius: 50%;
+    height: 80px;
+    object-fit: cover;
+    
+
+}
+
+.display_name p {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.username {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.username {
+    color: #000;
+    font-size: 12px;
+}
+body.dark .username {
+    color: rgb(136, 136, 136);
+    font-size: 12px;
+}
+.statue {
+    font-size: 10px;
+        margin: 0;
+    padding: 0;
+}

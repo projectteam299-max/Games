@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="cart.css">
+ </head>
+ 
+ <body>
+
+   
+   <header>
+        <h1>Shopping cart</h1>
+
+
+
+           <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+           </label> 
+
+         
+        
+   </header>
+
+    
+    <main>
+    
+    
+    
+    
+      <table id="cart-table">
+        
+        <thead>
+            
+              <tr>
+                
+                <th>product</th>
+                <th>price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+
+
+              </tr>
+            
+            
+        </thead>
+
+
+        <tbody id="cart-items">
+
+        </tbody>
+
+      </table>
+
+      
+
+      <h2>Total Price: $<span id="total-price">0</span></h2>
+
+
+      <p id="empty-cart">your cart is empty</p>
+
+
+      
+
+      <button onclick="checkout()">Checkout</button>
+      <!-- المفروض يتحط لينك صفحة الاستور -->
+      <a href="index.html">
+       <button>Continue Shopping</button>
+      </a>
+
+      
+
+
+    </main>
+
+
+    <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="#"><i class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></i></a>
+                    <a href="https://www.instagram.com/pr_gaming_store?igsh=bGd5MmtsbGYwNGlv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <a href="contact-us.html"><b>Contact us</b></a>
+                </div>
+                <p class="footer-copy"><b>© 2026 PR </b></p>
+            </div>
+        </footer>
+
+
+    
+
+    <script src="cart.js"></script>
+    
+ </body>
+
+
+
+
+</html>
+
+
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>7 Days to Die</title>
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body class="dark">
+        <header>
+            <nav class="navbar">
+                <div class="logo1">
+                    <img src="img/logo1.jpeg" alt="PR Logo">
+                </div>
+                <div class="logo2">
+                    <img src="img/logo2.jpeg" alt="PR Logo">
+                </div>
+                <ul class="nav-left">
+                    <li><a href="home.html">STORE</a></li>
+                    <li><a href="library.html">LIBRARY</a></li>
+                    <li><a href="frirnds.html">FRIENDS</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="News.html">NEWS</a></li>
+                    <li><a href="profile2.html">PROFILE</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+                <div class="nav-right">
+                    <input class="sre" type="text" placeholder="Search...">
+                    <button id="search">Search</button>
+                </div>
+                <div id="theme"><input type="checkbox" class="theme-checkbox" id="themeToggle"></div>
+            </nav>
+        </header>
+
+        <div class="main-game"> 
+            <div class="game-title"><h2>7 DAYS TO DIE</h2></div>
+
+            <div class="top-section">
+                <div class="game-media">
+                    <img id="current-img" src="img/16.png" data-type="video" alt="Game Image" style="display: none">
+                    <video id="main-video" poster="img/16.png" muted controls autoplay playsinline>
+                        <source src="gimg/7dtd.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="thumbnails">
+                        <img src="img/16.png" data-type="video" data-src="gimg/7dtd.mp4">
+                        <img src="gimg/7dtd1.jpg" data-type="image">
+                        <img src="gimg/7dtd2.jpg" data-type="image">
+                        <img src="gimg/7dtd3.jpg" data-type="image">
+                        <img src="gimg/7dtd4.jpg" data-type="image">
+                        <img src="gimg/7dtd5.jpg" data-type="image">
+                    
+                        <button class="prev">❮</button>
+                        <button class="next">❯</button>
+                    </div>
+                </div>
+
+                <div class="game-info">
+                    <div class="release-date"><p><span class="big-info">Release Date:</span> 25/07/2024</p></div>
+                    <div class="developer"><b><p><span class="big-info">Developer:</span> The Fun Pimps</p></b></div>
+                    <div class="age"><b><p><span class="big-info">Age Rating:</span> M (17+)</p></b></div>
+                    <div class="genre"><b><p><span class="big-info">Genre:</span> Survival, Horror, Crafting</p></b></div>
+                    <div class="publisher"><b><p><span class="big-info">Publisher:</span> The Fun Pimps Entertainment LLC</p></b></div>
+
+                    <div class="price"><b><span class="price">Price:</span> $44.99</b></div>  
+                    <div class="game-buttons">
+                        <div class="buy" id="buyBtn" data-id="7days_die">Buy</div>
+                        <div class="add-cart">Add to cart</div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <div class="description">
+            <p>7 Days to Die is an open-world game that is a unique combination of first-person shooter, survival horror, tower defense, and role-playing games. Play the definitive zombie survival sandbox RPG that came first. Navezgane awaits!</p>
+        </div>
+
+        <div class="system-requirements">
+            <caption class="system-requirements"><h3>System Requirements</h3></caption>
+                <tr>
+                    <th><h4>Minimum</h4></th>
+                    <th><h4>Recommended</h4></th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 64-bit</li>
+                            <li><strong>Processor:</strong> 2.8 Ghz Quad Core CPU</li>
+                            <li><strong>Memory:</strong> 8 GB RAM</li>
+                            <li><strong>Graphics:</strong> 2 GB Dedicated Video RAM</li>
+                            <li><strong>DirectX:</strong> Version 11</li>
+                            <li><strong>Storage:</strong> 15 GB available space</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 64-bit</li>
+                            <li><strong>Processor:</strong> 3.2 Ghz Quad Core CPU or faster</li>
+                            <li><strong>Memory:</strong> 16 GB RAM</li>
+                            <li><strong>Graphics:</strong> 4 GB Dedicated Video RAM</li>
+                            <li><strong>DirectX:</strong> Version 11</li>
+                            <li><strong>Storage:</strong> 15 GB available space</li>
+                        </ul>
+                    </td>
+                </tr>
+        </div>         
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/pr_gaming_store?igsh=bGd5MmtsbGYwNGlv" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <a href="contact.html"><b>Contact us</b></a>
+                </div>
+                <p class="footer-copy"><b> </b></p>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+        <script src="js/GAME.js"></script>
+        <script src="js/buy.js"></script>
+    </body>
+</html>
