@@ -7,12 +7,13 @@ body {
     background-color: rgb(196, 210, 210);
     font-family: 'Poppins', sans-serif;
     color: #e5e7eb;
-
+    background-image:linear-gradient (to top, #0b111ed1 100%),url(img/light.jpg)
 }
 body.dark {
-    background: #0f172a;
+    background-color: #0f172a;
     font-family: 'Poppins', sans-serif;
     color: #e5e7eb;
+    background-image:linear-gradient url(img/dark.jpg);
 }
 
 body.dark .main-game {
