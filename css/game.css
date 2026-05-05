@@ -197,11 +197,9 @@ body.dark .game-info div span {
 
 body.dark .game-buttons {
     margin-top: 20px;
-
     background: #111827;
     padding: 20px;
     border-radius: 16px;
-
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -216,6 +214,7 @@ body.dark .game-buttons {
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 8px;
 }
 
 .buy:hover {
@@ -315,4 +314,8 @@ body.dark .system-requirements {
 .system-requirements li {
     margin-bottom: 12px;
     display: block;
+}
+
+.add-cart{
+    display: none;
 }
